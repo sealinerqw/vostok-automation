@@ -335,35 +335,79 @@ footer{
   padding-bottom: 2rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .container {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   
   .hero{
     flex-direction: column;
     flex-wrap: wrap;
   }
+  
   .hero_content{
     flex-direction: column;
+    gap: 2rem;
   }
+
+  .hero_content h1{
+    text-align: center;
+  }
+
   .services_cards, .suppliers, .contacts {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-  .services_cards, .suppliers, .contacts, .footer_logo {
-    width: 90%;
-    max-width: 400px;
+  .services_title p{
+    padding-bottom: 1rem;
   }
-  .services_content, .contacts_content, .services_images, .services_imageblock, .footer_links {
+  .services_card{
+    align-items: center;
+    text-align: center;
+  }
+  .services_images{
+    flex-direction: row;
+  }
+ 
+  .suppliers_title p{
+    padding-bottom: 1rem;
+  }
+
+  .services_content, .contacts_content{
     flex-direction: column;
     align-items: center;
   }
+
   .services_cards, .services_images, .footer_links {
     width: 100%;
+    align-items: center;
   }
-  .services_card, .services_imageblock, .footer_link {
+
+  .services_imageblock, .footer_link {
     align-items: flex-start;
+  }
+  .contacts_title{
+    padding-bottom: 1rem;
+  }
+  .contacts_links, .contacts_map{
+    width: 100%;
+  }
+  .contacts_link{
+    width: 99%;
+    text-align: center;
+    text-wrap: wrap;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  footer{
+    flex-direction: column;
+  }
+  .footer_link{
+    width: 100%;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
