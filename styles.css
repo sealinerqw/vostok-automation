@@ -333,6 +333,7 @@ footer{
   align-self: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  text-align: center;
 }
 
 @media only screen and (max-width: 800px) {
@@ -412,9 +413,5 @@ footer{
   }
   .footer_link address{
     text-align: center;
-  }
-  .copyright{
-    text-align: center;
-    width: 100%;
   }
 }
