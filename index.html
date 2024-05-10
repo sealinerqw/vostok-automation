@@ -11,18 +11,28 @@
   <title>Восток-Автоматизация</title>
 </head>
 <body>
+  
   <div class="container">
     <header>
         <div class="header_logo">
           <img src="img/logo.png" alt="Логотип ВА">
         </div>
-        <nav>
+        <div class="nav_buttons-desktop">
           <a href="#hero">Главная</a>
           <a href="#services">Услуги</a>
           <a href="#suppliers">Продукция</a>
           <a href="#contacts">Контакты</a>
-        </nav>
+        </div>
+        <div class="nav_buttons-mobile" onclick="dropdownInteraction()">
+          <img src="img/nav_button.svg" alt="">
+        </div>
     </header>
+    <div class="dropdown">
+      <a href="#hero" onclick="hideDropdown()">Главная</a>
+      <a href="#services" onclick="hideDropdown()">Услуги</a>
+      <a href="#suppliers" onclick="hideDropdown()">Продукция</a>
+      <a href="#contacts" onclick="hideDropdown()">Контакты</a>
+    </div>
     <div class="hero" id="hero">
         <div class="hero_content">
           <h1>Ваш <span>надежный</span> партнер по поставке комплектующих и оборудования!</h1>
@@ -117,6 +127,7 @@
       <p>© 2024 ООО ПКФ “Восток-Автоматизация”.</p>
       <p> Все права защищены.</p>
     </div>
+    <div class="dim"></div>
     <script src="scripts/script.js"></script>
 </body>
 </html>

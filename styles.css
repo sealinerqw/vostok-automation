@@ -43,6 +43,7 @@ header{
   padding-bottom: 1.125rem;
   justify-content: space-between;
   border-bottom: 1px solid #f0eeee;
+  z-index: 4;
 }
 
 .header_logo{
@@ -53,7 +54,7 @@ header{
   align-self: center;
 }
 
-nav{
+.nav_buttons-desktop{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +65,38 @@ nav{
   line-height: 1.5rem;
   color: #344051;
 }
+.nav_buttons-mobile{
+  display: none;
+}
 
+.nav_button-mobile img{
+  width: 40px;
+  height: 40px;
+}
+.dropdown{
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  padding-top: 1rem;
+  align-items: flex-end;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #344051;
+  z-index: 3;
+}
+.dim{
+  position: fixed;
+  width: 100vh;
+  height: 100vh;
+  background: #242424;
+  opacity: 0.6;
+  z-index: 2;
+  display: none;
+  animation: fadein 1s, fadeout 1s;
+}
 .hero{
   display: flex;
   width: 100%;
@@ -413,5 +445,27 @@ footer{
   }
   .footer_link address{
     text-align: center;
+  }
+}
+@keyframes fadein {
+  from{
+    opacity: 0;
+  }
+  75%{
+    opacity: 0.4;
+  }
+  to{
+    opacity: 0.6;
+  }
+}
+@keyframes fadeout {
+  from{
+    opacity: 0.6;
+  }
+  75%{
+    opacity: 0.2;
+  }
+  to{
+    opacity: 0;
   }
 }
