@@ -112,7 +112,7 @@ header{
   height: 100%;
   font-style: normal;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2.75rem;
   line-height: 3.75rem;
   align-self: stretch;
   margin-top: auto;
@@ -139,10 +139,11 @@ text-align: center;
   text-decoration-color: #264C8B;
 }
 .hero_content img{
-  border-radius: 5%;
+  border-radius: 1rem;
   max-width: 600px;
   height: 700px;
   box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.15);
+  object-fit: cover;
 }
 
 .services{
@@ -226,15 +227,15 @@ text-align: center;
   height: 100%;
   width: 50%;
   flex-direction: row;
-  gap: 2rem;
+  gap: 1rem;
 }
 .services_imageblock{
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 .services_imageblock img{
-  border-radius: 5%;
+  border-radius: 1rem;
   box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.15);
 }
 
@@ -376,7 +377,6 @@ footer{
   
   .hero{
     flex-direction: column;
-    flex-wrap: wrap;
   }
   
   .hero_content{
@@ -412,6 +412,9 @@ footer{
     align-items: center;
   }
 
+  .services_images{
+    justify-content: center;
+  }
   .services_cards, .services_images, .footer_links {
     width: 100%;
     align-items: center;
@@ -425,6 +428,7 @@ footer{
   }
   .contacts_links, .contacts_map{
     width: 100%;
+    align-self: center;
   }
   .contacts_link{
     width: 99%;
@@ -434,6 +438,8 @@ footer{
     margin-left: 0;
     margin-right: 0;
   }
+  
+
   footer{
     flex-direction: column;
   }
@@ -445,6 +451,54 @@ footer{
   }
   .footer_link address{
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  
+  .container{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .header_logo{
+    width: 13.875rem;
+    height: 4.625rem;
+    fill: #264C8B;
+    background: #FFFFFF;
+    align-self: center;
+  }
+  
+  .hero_content h1{
+    height: 100%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    align-self: center;
+    /* margin-top: auto;
+    margin-bottom: auto; */
+  }
+  .services_card:first-child{
+    padding-top: 0;
+  }
+  .services_card p {
+    align-self: center;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .hero_content img{
+    max-width: 300px;
+  }
+
+  .hero_content h1{
+    height: 100%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.35rem;
+    line-height: 3.25rem;
+    align-self: center;
+    /* margin-top: auto;
+    margin-bottom: auto; */
   }
 }
 @keyframes fadein {
