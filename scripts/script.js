@@ -23,7 +23,7 @@ async function dropdownInteraction(){
     // showOverlay()
   } else {
     dropdown.style.animation = "shrinkUp 0.3s ease-in-out backwards"
-    await sleep(300)
+    await sleep(310)
     dropdown.style.display = "none"
     // hideOverlay()
   }
