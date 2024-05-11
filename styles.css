@@ -23,6 +23,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .container{
+  position: relative;
   display: flex;
   width: 100%;
   max-width: 1440px;
@@ -42,7 +43,7 @@ header{
   padding-top: 1.125rem;
   padding-bottom: 1.125rem;
   justify-content: space-between;
-  border-bottom: 1px solid #f0eeee;
+  /* border-bottom: 1px solid #f0eeee; */
   z-index: 9999;
 }
 
@@ -75,31 +76,33 @@ header{
 }
 .dropdown{
   background-color: #fff;
+  align-self: center;
   display: none;
   flex-direction: column;
-  width: 95%;
+  width: 100%;
   position: absolute;
-  top: 9.5rem;
-  left: 0.5rem;
   align-items: flex-end;
   font-style: normal;
   font-weight: 500;
+  top: 4%;
   font-size: 1.125rem;
   line-height: 1.5rem;
   color: #344051;
-  z-index: 9999;
-  border-left: 1px solid #f0eeee;
-  border-right: 1px solid #f0eeee;
-  border-bottom: 1px solid #f0eeee;
+  z-index: 5;
+  border-left: 1px solid #e4e4e4;
+  border-right: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   transform-origin: top center;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
 }
 .dropdown a{
   border-bottom: 1px solid #f0eeee;
   width: 95%;
-  text-align: end;
+  text-align: center;
   padding: 0.5rem;
+
 }
 .dropdown a:last-of-type{
   border-bottom: 0;
