@@ -247,6 +247,7 @@ text-align: center;
   width: 50%;
   flex-direction: row;
   gap: 1rem;
+  
 }
 .services_imageblock{
   display: flex;
@@ -498,6 +499,18 @@ footer{
   }
   .footer_link address{
     text-align: center;
+  }
+  .hidden{
+    filter: blur(0.25rem);
+    opacity: 0;
+    transform: translate(-50%);
+    transition: all 1s;
+  }
+  
+  .show{
+    filter: blur(0);
+    transform:  translate(0);
+    opacity: 1;
   }
 }
 
