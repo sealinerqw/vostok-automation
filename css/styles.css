@@ -266,6 +266,17 @@ text-align: center;
   transition-delay: 200ms;
 }
 
+.services_imageblock-big{
+  height: 304px;
+  width: 100%;
+  object-fit: scale-down;
+}
+
+.services_imageblock-smsll{
+  height: 198px;
+  width: 288px;
+  object-fit: cover;
+}
 
 .suppliers{
   display: flex;
