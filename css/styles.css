@@ -269,13 +269,13 @@ text-align: center;
 .services_imageblock-big{
   height: 304px;
   width: 100%;
-  object-fit: scale-down;
+  object-fit: contain;
 }
 
 .services_imageblock-small{
   height: 198px;
   width: 100%;
-  object-fit: scale-down;
+  object-fit: contain;
 }
 
 .suppliers{
