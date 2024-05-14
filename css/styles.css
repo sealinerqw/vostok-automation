@@ -272,10 +272,10 @@ text-align: center;
   object-fit: scale-down;
 }
 
-.services_imageblock-smsll{
+.services_imageblock-small{
   height: 198px;
-  width: 288px;
-  object-fit: cover;
+  width: 100%;
+  object-fit: scale-down;
 }
 
 .suppliers{
