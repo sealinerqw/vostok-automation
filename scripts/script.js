@@ -4,7 +4,8 @@ const navButtonsMoblie = document.querySelector('.nav_buttons-mobile')
 const dropdown = document.querySelector('.dropdown')
 const map = document.querySelector('.contacts_map')
 const overlay = document.querySelector('.overlay')
-const sleep = ms => new Promise(r => setTimeout(r, ms));
+const body = document.querySelector('.body')
+const sleep = ms => new Promise(r => setTimeout(r, ms))
 const hiddenElements = document.querySelectorAll('.hidden')
 
 //если div попадает в видимость на экране добавить css-класс show
@@ -17,10 +18,18 @@ const observer = new IntersectionObserver((entries)=>{
 })
 
 //смена nav-бара при загрузке с мобильного устройства
-if (width <= 800){
-  navButtonsDesktop.style.display = "none"
-  navButtonsMoblie.style.display = "block"
-}
+const widthObserver = new ResizeObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.contentRect.width <= 950) {
+      navButtonsDesktop.style.display = "none";
+      navButtonsMoblie.style.display = "block";
+    } else {
+      navButtonsDesktop.style.display = "inherit";
+      navButtonsMoblie.style.display = "none";
+    }
+  })
+})
+
 
 //замена вставки карты в контактах при загрузке сайта на
 //устройствах с шириной экрана <= 360 пикселей
@@ -50,3 +59,4 @@ async function dropdownInteraction(){
 }
 
 hiddenElements.forEach((element) => observer.observe(element))
+widthObserver.observe(body)
