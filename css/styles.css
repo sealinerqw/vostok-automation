@@ -40,6 +40,7 @@ a, a:hover, a:focus, a:active {
 }
 
 header{
+  position: sticky;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -480,7 +481,6 @@ footer{
 
   .services_images{
     justify-content: center;
-    transition-delay: 1000ms;
   }
   .services_cards, .services_images, .footer_links {
     width: 100%;
