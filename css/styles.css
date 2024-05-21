@@ -40,7 +40,6 @@ a, a:hover, a:focus, a:active {
 }
 
 header{
-  position: sticky;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -197,6 +196,7 @@ text-align: center;
 
 .services_content{
   display: flex;
+  height: 100%;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
@@ -267,13 +267,13 @@ text-align: center;
 }
 
 .services_imageblock-big{
-  height: 304px;
+  height: 25rem;
   width: 100%;
   object-fit: contain;
 }
 
 .services_imageblock-small{
-  height: 198px;
+  height: 18rem;
   width: 100%;
   object-fit: contain;
 }
@@ -469,7 +469,17 @@ footer{
   .services_images{
     flex-direction: row;
   }
- 
+  .services_imageblock-big{
+    height: 16rem;
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .services_imageblock-small{
+    height: 12rem;
+    width: 100%;
+    object-fit: contain;
+  }
   .suppliers_title p{
     padding-bottom: 1rem;
   }
