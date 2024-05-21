@@ -480,7 +480,7 @@ footer{
 
   .services_images{
     justify-content: center;
-    transition-delay: none;
+    transition-delay: 1000ms;
   }
   .services_cards, .services_images, .footer_links {
     width: 100%;
@@ -581,6 +581,7 @@ footer{
     margin-bottom: auto; */
   }
 }
+
 @keyframes fadein {
   from{
     opacity: 0;
