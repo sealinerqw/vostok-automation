@@ -64,7 +64,7 @@ header{
   gap: 1.5rem;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   line-height: 1.5rem;
   color: #344051;
 }
@@ -92,7 +92,7 @@ header{
   font-style: normal;
   font-weight: 500;
   top: 3.5%;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   line-height: 1.5rem;
   color: #344051;
   z-index: 5;
@@ -123,7 +123,7 @@ header{
   justify-content: center;  
   padding-top: 2rem;
   padding-bottom: 4rem;
-  border-bottom: 1px solid #f0eeee; 
+  border-bottom: 1px solid #f0eeee;
 }
 
 .hero h1{
@@ -135,6 +135,7 @@ header{
   align-self: stretch;
   margin-top: auto;
   margin-bottom: auto;
+  text-shadow: 3px 3px 4px rgba(0,0,0,0.25);
 }
 
 h3{
@@ -181,6 +182,7 @@ text-align: center;
 
 .services_title{
   max-width: 650px;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.25);
 }
 
 .services_title p{
@@ -270,12 +272,14 @@ text-align: center;
   height: 25rem;
   width: 100%;
   object-fit: contain;
+  background: #ffffff;
 }
 
 .services_imageblock-small{
   height: 18rem;
   width: 100%;
   object-fit: contain;
+  background: #ffffff;
 }
 
 .suppliers{
@@ -293,6 +297,7 @@ text-align: center;
 
 .suppliers_title{
   max-width: 650px;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.25);
 }
 
 .suppliers_title p{
@@ -324,6 +329,7 @@ text-align: center;
 .contacts_title{
   max-width: 650px;
   padding-bottom: 2.5rem;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.25);
 }
 
 .contacts_content{
