@@ -76,6 +76,8 @@ header{
   background: #ffffff;
   padding: 0.5rem;
   border-radius: 0.8rem;
+  transform: scale(1);
+  transition: all 0.2s;
 }
 .nav_buttons-desktop a:hover{
   color: #264C8B;
@@ -83,6 +85,7 @@ header{
   transform: scale(1.1);
   transition: all 0.2s;
 }
+
 .nav_buttons-mobile{
   display: none;
 }
