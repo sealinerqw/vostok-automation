@@ -30,14 +30,6 @@ const widthObserver = new ResizeObserver((entries) => {
   })
 })
 
-
-//замена вставки карты в контактах при загрузке сайта на
-//устройствах с шириной экрана <= 360 пикселей
-if(width <= 360){
-  // map.innerHTML = '<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac9d40a48c2fa8d3795fa9fe89a5816c4501d1040980a0799c15b64336bd9a8b7&amp;source=constructor" width="320" height="350" frameborder="0"></iframe>'
-  map.innerHTML = '<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac9d40a48c2fa8d3795fa9fe89a5816c4501d1040980a0799c15b64336bd9a8b7&amp;source=constructor" width="288" height="282" frameborder="0"></iframe>'
-}
-
 //взаимодействие с кнопкой и элементами мобильного nav-сегмента
 navButtonsMoblie.addEventListener('click', ()=>{
   dropdownInteraction()
