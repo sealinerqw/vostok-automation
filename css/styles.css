@@ -208,6 +208,7 @@ text-align: center;
   margin-top: 0.625rem;
   padding-bottom: 4rem;
   transition-delay: 200ms;
+  text-shadow: none;
 }
 
 .services_content{
@@ -322,6 +323,7 @@ text-align: center;
   margin-top: 0.625rem;
   padding-bottom: 4rem;
   transition-delay: 200ms;
+  text-shadow: none;
 }
 .suppliers img{
   transition-delay: 400ms;
