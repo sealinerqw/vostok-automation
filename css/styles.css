@@ -99,7 +99,7 @@ header{
   align-self: center;
   display: none;
   flex-direction: column;
-  width: 100%;
+  width: 99%;
   position: absolute;
   align-items: flex-end;
   font-style: normal;
@@ -116,6 +116,7 @@ header{
   border-bottom-right-radius: 1rem;
   transform-origin: top center;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+  transition: all 0.4s;
 }
 .dropdown a{
   border-bottom: 1px solid #f0eeee;
@@ -278,7 +279,6 @@ text-align: center;
 .services_imageblock img{
   border-radius: 1rem;
   box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.15);
-  transition-delay: 200ms;
 }
 
 .services_imageblock-big{
@@ -628,25 +628,31 @@ footer{
 
 @keyframes growDown {
   0% {
-      transform: scaleY(0)
+      transform: scaleY(0);
+      opacity: 0;
   }
   80% {
-      transform: scaleY(1.1)
+      transform: scaleY(1.1);
+      opacity: 0.9;
   }
   100% {
-      transform: scaleY(1)
+      transform: scaleY(1);
+      opacity: 1;
   }
 }
 
 @keyframes shrinkUp {
   0% {
     transform: scaleY(1);
+    opacity: 1;
   }
   20% {
     transform: scaleY(1.1);
+    opacity: 0.9;
   }
   100% {
     transform: scaleY(0);
+    opacity: 0;
   }
 }
 @keyframes fadeout {
