@@ -88,6 +88,7 @@ header{
 
 .nav_buttons-mobile{
   display: none;
+  transition: buttonDown 0.1s, buttonUp 0.1s;
 }
 
 .nav_button-mobile img{
@@ -104,7 +105,6 @@ header{
   align-items: flex-end;
   font-style: normal;
   font-weight: 500;
-  top: 3.5%;
   font-size: 1.25rem;
   line-height: 1.5rem;
   color: #344051;
@@ -619,14 +619,6 @@ footer{
   }
 }
 
-@keyframes fadein {
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
 
 @keyframes growDown {
   0% {
@@ -657,14 +649,4 @@ footer{
     opacity: 0;
   }
 }
-@keyframes fadeout {
-  from{
-    opacity: 0.6;
-  }
-  50%{
-    opacity: 0.2;
-  }
-  to{
-    opacity: 0;
-  }
-}
+

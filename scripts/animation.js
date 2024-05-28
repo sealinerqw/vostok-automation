@@ -9,3 +9,4 @@ const observer = new IntersectionObserver((entries)=>{
 })
 
 hiddenElements.forEach((element) => observer.observe(element))
+
