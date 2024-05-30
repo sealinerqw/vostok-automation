@@ -1,7 +1,3 @@
-const dropdown = document.querySelector('.dropdown')
-const sleep = ms => new Promise(r => setTimeout(r, ms))
-
-
 navButtonsMoblie.addEventListener('click', ()=>{
   dropdownInteraction()
 })

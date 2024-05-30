@@ -1,6 +1,4 @@
-const body = document.querySelector('.body')
-const navButtonsDesktop = document.querySelector('.nav_buttons-desktop')
-const navButtonsMoblie = document.querySelector('.nav_buttons-mobile')
+
 
 
 const widthObserver = new ResizeObserver((entries) => {

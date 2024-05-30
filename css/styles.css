@@ -567,12 +567,7 @@ footer{
   }
 }
 
-@media only screen and (max-width: 380px) {
-  .container{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-
+@media only screen and (max-width: 600px){
   .header_logo{
     width: 13.875rem;
     height: 4.625rem;
@@ -580,7 +575,14 @@ footer{
     background: #FFFFFF;
     align-self: center;
   }
-  
+}
+
+@media only screen and (max-width: 380px) {
+  .container{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
   .hero_content h1{
     height: 100%;
     font-style: normal;
