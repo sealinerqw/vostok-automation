@@ -1,0 +1,6 @@
+const body = document.querySelector('.body')
+const navButtonsDesktop = document.querySelector('.nav_buttons-desktop')
+const navButtonsMoblie = document.querySelector('.nav_buttons-mobile')
+const dropdown = document.querySelector('.dropdown')
+const sleep = ms => new Promise(r => setTimeout(r, ms))
+const hiddenElements = document.querySelectorAll('.hidden')
